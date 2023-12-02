@@ -1,6 +1,6 @@
-#find_package(Microsoft.GSL CONFIG REQUIRED)
+find_package(Microsoft.GSL CONFIG REQUIRED)
 file(GLOB advent_of_code_src CONFIGURE DEPENDS "*.cpp")
 add_library(advent_of_code SHARED ${advent_of_code_src})
-#target_link_libraries(advent_of_code PRIVATE Microsoft.GSL::GSL)
+target_link_libraries(advent_of_code PRIVATE Microsoft.GSL::GSL)
 add_executable(advent_of_code_bin main.cpp)
 target_link_libraries(advent_of_code_bin PRIVATE advent_of_code)

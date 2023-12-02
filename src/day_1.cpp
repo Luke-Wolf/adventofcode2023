@@ -66,7 +66,6 @@ namespace Day1 {
                         tmp++;
                         if (tmp != Input.cend() && *tmp == 'e') {
                             tokens.push_back(Token{TokenType::Number, 1});
-                            //itr = tmp;
                             continue;
                         }
                     }
@@ -76,7 +75,6 @@ namespace Day1 {
                         tmp++;
                         if (tmp != Input.cend() && *tmp == 'o') {
                             tokens.push_back(Token{TokenType::Number, 2});
-                            //itr = tmp;
                             continue;
                         }
                     } else if (tmp != Input.cend() && *tmp == 'h') {
@@ -87,7 +85,6 @@ namespace Day1 {
                                 tmp++;
                                 if (tmp != Input.cend() && *tmp == 'e') {
                                     tokens.push_back(Token{TokenType::Number, 3});
-                                    //itr = tmp;
                                     continue;
                                 }
                             }
@@ -101,7 +98,6 @@ namespace Day1 {
                             tmp++;
                             if (tmp != Input.cend() && *tmp == 'r') {
                                 tokens.push_back(Token{TokenType::Number, 4});
-//                                itr = tmp;
                                 continue;
                             }
                         }
@@ -111,7 +107,6 @@ namespace Day1 {
                             tmp++;
                             if (tmp != Input.cend() && *tmp == 'e') {
                                 tokens.push_back(Token{TokenType::Number, 5});
-//                                itr = tmp;
                                 continue;
                             }
                         }
@@ -122,7 +117,6 @@ namespace Day1 {
                         tmp++;
                         if (tmp != Input.cend() && *tmp == 'x') {
                             tokens.push_back(Token{TokenType::Number, 6});
-//                            itr = tmp;
                             continue;
                         }
                     } else if (tmp != Input.cend() && *tmp == 'e') {
@@ -133,7 +127,6 @@ namespace Day1 {
                                 tmp++;
                                 if (tmp != Input.cend() && *tmp == 'n') {
                                     tokens.push_back(Token{TokenType::Number, 7});
-//                                    itr = tmp;
                                     continue;
                                 }
                             }
@@ -149,7 +142,6 @@ namespace Day1 {
                                 tmp++;
                                 if (tmp != Input.cend() && *tmp == 't') {
                                     tokens.push_back(Token{TokenType::Number, 8});
-//                                    itr = tmp;
                                     continue;
                                 }
                             }
@@ -163,7 +155,6 @@ namespace Day1 {
                             tmp++;
                             if (tmp != Input.cend() && *tmp == 'e') {
                                 tokens.push_back(Token{TokenType::Number, 9});
-//                                itr = tmp;
                                 continue;
                             }
                         }
